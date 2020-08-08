@@ -13,3 +13,18 @@ $(function () {
         location.reload();
       });
     });
+    $(".devourBtn").on("click", function (event) {
+        event.preventDefault();
+        const id = $(this).data("id");
+        let devouredObj = {
+          devoured: true,
+        };
+        $.ajax("/api/burgers/" + id, {
+          type: "PUT",
+          data: devouredObj,
+        }).then(function () {
+          console.log("Changed burger devoured type to true");
+          location.reload();
+        });
+      });
+    });
