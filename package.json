@@ -1,0 +1,34 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Senthetic/BurgerHandlebarsHw.git"
+  },
+  "keywords": [
+    "npm",
+    "init",
+    "npm",
+    "install",
+    "npm",
+    "start"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Senthetic/BurgerHandlebarsHw/issues"
+  },
+  "homepage": "https://github.com/Senthetic/BurgerHandlebarsHw#readme"
+}

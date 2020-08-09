@@ -1,13 +1,13 @@
-
 const express = require("express");
 const app = express();
 
 const orm = require("../config/orm.js");
-
 app.get("/", function (req, res) {
-    orm.selectAll("burgers", function (res) {
-      console.log(res);
-      res.render("index");
+    orm.selectAll("burgers", function (response) {
+      console.log("response:" ,res);
+      res.render("index",(err,response) => {
+          res.send(response);
+      });
     });
   });
   
